@@ -15,7 +15,7 @@ import android.content.Context;
 public class StaticResource {
 	public static final int RESOURCE_ID_NOT_EXIST = 0;
 	
-	static final String PATTERN = "@([\\w\\.]+:)?(\\w+)/(\\w+)";
+	static final String PATTERN = "@?([\\w\\.]+:)?(\\w+)/(\\w+)";
 	private static final Pattern RESOURCE_ATTRIBUTE_PATTERN = Pattern.compile("^"+PATTERN+"$");
 
 	String resourceName;
